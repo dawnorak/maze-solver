@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#maze-container {
+    display: grid;
+    grid-template-columns: repeat(10, 40px); /* Adjust the number of columns as needed */
+    gap: 2px; /* Adjust the gap between cells */
+    margin: 20px 0;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.cell.start {
+    background-color: #3cb371; /* Green color for the start cell */
+}
+
+.cell.end {
+    background-color: #ff6347; /* Red color for the end cell */
+}
+
+#solve-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#solve-button:hover {
+    background-color: #0056b3;
+}
