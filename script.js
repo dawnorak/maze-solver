@@ -4,7 +4,7 @@ const CELL_WALL = 1;
 const CELL_START = 2;
 const CELL_END = 3;
 
-// Initialize grid dimensions and cell size (adjust as needed)
+// Initialize grid dimensions and cell size
 const numRows = 10;
 const numCols = 10;
 const cellSize = 40;
@@ -79,7 +79,7 @@ function toggleCell(cell, row, col) {
     }
 }
 
-// Function to handle cell hover (for drawing walls)
+// Function to handle cell hover for drawing walls
 function handleCellHover(cell, row, col) {
     if (isDrawing) {
         toggleCell(cell, row, col);
@@ -91,11 +91,11 @@ document.addEventListener('mousedown', () => isDrawing = true);
 document.addEventListener('mouseup', () => isDrawing = false);
 mazeContainer.addEventListener('mouseleave', () => isDrawing = false);
 
-// Event listener for solving the maze (implement this)
+// Event listener for solving the maze
 const solveButton = document.getElementById('solve-button');
 solveButton.addEventListener('click', () => solveMaze());
 
-// Function to implement maze-solving algorithm (you can add this part)
+// Function to implement maze-solving algorithm
 function solveMaze() {
     // Reset cell colors
     resetCellColors();
