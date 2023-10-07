@@ -1,5 +1,4 @@
-# maze-solver
-A BFS-based Custom Maze Solver
+# BFS-based Custom Maze Solver
 
 <p>
   Create a custom maze by clicking the cells to create start cell, end cell and obstacle cells.
